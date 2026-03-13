@@ -337,7 +337,7 @@ select::-ms-expand {
 }
 .fv {
   background-image: url(../images/FV-img.jpg);
-  background-size: contain;
+  background-size: cover;
   aspect-ratio: 1440/460;
   display: flex;
   justify-content: center;
