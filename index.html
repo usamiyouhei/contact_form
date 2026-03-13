@@ -55,19 +55,59 @@
   </head>
 
   <body>
-    <header class="header">
-      <img
-        src="./images/アイコンlogo.png"
+    <header class="header js-header">
+       <div class="header__inner">
+         <img
+        src="./images/logo.svg"
         alt=""
         class="header__logo"
         loading="lazy"
       />
+        <h1 class="header__name">kenchan cake</h1>
+        <nav class="header__nav md-none">
+          <ul class="header__items">
+            <li class="header__item">
+              <a href="#vision" class="header__link">Vision</a>
+            </li>
+            <li class="header__item">
+              <a href="#service" class="header__link">Service</a>
+            </li>
+            <li class="header__item">
+              <a href="#news" class="header__link">News</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#contact" class="header__contact contact-button md-none">Contact</a>
+      </div>
     </header>
+
+    <div class="hamburger js-hamburger md-show">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="drawer-menu js-drawer">
+      <div class="drawer-menu__inner">
+        <ul class="drawer-menu__items">
+          <li class="drawer-menu__item">
+            <a href="#vision" class="drawer-menu__link">Vision</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a href="#service" class="drawer-menu__link">Service</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a href="#news" class="drawer-menu__link">News</a>
+          </li>
+        </ul>
+        <a href="#contact" class="drawer-menu__contact contact-button">Contact</a>
+      </div>
+    </div>
 
     <main>
       <!-- Fv -->
       <div class="fv">
-        <h1 class="fv__title">お問い合せ</h1>
+        <h1 class="fv__title">お問い合わせ</h1>
       </div>
 
       <!-- お問い合せ -->
@@ -78,7 +118,7 @@
             下記フォームより受け付けております。<br />
             確認後、折り返しご連絡させていただきます。
           </p>
-         <form class="contact__form">
+          <form class="contact__form">
             <div class="contact__item">
               <div class="contact__label">
                 <label for="name" class="contact__label-text">お名前</label>
@@ -103,10 +143,41 @@
                 type="email"
                 id="mail"
                 class="contact__input"
-                placeholder="excitecode@info.com"
+                placeholder="〇〇@info.com"
                 required
               />
             </div>
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="mail" class="contact__label-text"
+                  > 電話番号</label
+                >
+                <span class="contact__required">必須</span>
+              </div>
+              <input
+                type="tel"
+                id="tel"
+                class="contact__input"
+                placeholder="012-345-6789"
+                required
+              />
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="contents" class="contact__label-text"
+                  >住所</label
+                >
+                <span class="contact__required">必須</span>
+              </div>
+              <textarea
+                class="contact__textarea"
+                id="contents"
+                placeholder="住所を入力してください"
+                required
+              ></textarea>
+            </div>
+
             <div class="contact__item">
               <div class="contact__label">
                 <label for="type" class="contact__label-text"
@@ -117,19 +188,58 @@
               <div class="contact__select-wrap">
                 <select class="contact__select" id="type" required>
                   <option value="">選択してください</option>
-                  <option value="資料請求"></option>
-                  <option value="サービスについて">サービスについて</option>
+                  <option value="レモンケーキのご注文">レモンケーキのご注文</option>
+                  <option value="他のお菓子について">他のお菓子について</option>
                   <option value="その他">その他</option>
                 </select>
               </div>
-              
             </div>
+
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="type" class="contact__label-text"
+                  >個数</label
+                >
+                <span class="contact__required">必須</span>
+              </div>
+              <div class="contact__select-wrap">
+                <select class="contact__select" id="type" required>
+                  <option value="">選択してください</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="その他">その他</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="type" class="contact__label-text"
+                  >贈答用包装紙の有無</label
+                >
+                <!-- <span class="contact__required">必須</span> -->
+              </div>
+              <div class="contact__select-wrap">
+                <select class="contact__select" id="type" required>
+                  <option value="">選択してください</option>
+                  <option value="のし紙">のし紙</option>
+                  <option value="包装紙">包装紙</option>
+                  <option value="包装紙・リボン">包装紙・リボン</option>
+                  <option value="その他">その他</option>
+                </select>
+              </div>
+            </div>
+
             <div class="contact__item">
               <div class="contact__label">
                 <label for="contents" class="contact__label-text"
-                  >お問い合わせ内容</label
+                  >その他配送に関するご希望ございましたらご記載ください</label
                 >
-                <span class="contact__required">必須</span>
               </div>
               <textarea
                 class="contact__textarea"
