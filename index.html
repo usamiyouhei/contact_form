@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>レモンケーキ | お問い合わせ</title>
+    <meta
+      name="description"
+      content="お問い合わせはこちらから行うことができます。商品やサービスに関するご質問、ご提案、その他何でもお気軽にご連絡ください。"
+    />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="レモンケーキ | お問い合わせ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://hogehoge.com/" />
+    <meta
+      property="og:image"
+      content="http://hogehoge.com/images/ogp-img.jpg"
+    />
+    <meta property="og:site_name" content="Lemon cake" />
+    <meta
+      property="og:description"
+      content="お問い合わせはこちらから行うことができます。商品やサービスに関するご質問、ご提案、その他何でもお気軽にご連絡ください。"
+    />
+    <meta name="twitter:card" content="summary" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon 2.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ファーストビューの背景画像を先に読み込む -->
+    <link rel="preload" as="image" href="./images/fv-img.jpg" />
+    <link rel="preload" as="image" href="./images/fv-img-sp.jpg" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <!-- JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        src="./images/アイコンlogo.png"
+        alt=""
+        class="header__logo"
+        loading="lazy"
+      />
+    </header>
+
+    <main>
+      <!-- Fv -->
+      <div class="fv">
+        <h1 class="fv__title">お問い合せ</h1>
+      </div>
+
+      <!-- お問い合せ -->
+      <div class="contact">
+        <div class="contact__inner">
+          <p class="contact__text">
+            レモンケーキお問い合わせは<br />
+            下記フォームより受け付けております。<br />
+            確認後、折り返しご連絡させていただきます。
+          </p>
+         <form class="contact__form">
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="name" class="contact__label-text">お名前</label>
+                <span class="contact__required">必須</span>
+              </div>
+              <input
+                type="text"
+                id="name"
+                class="contact__input"
+                placeholder="山田 太郎"
+                required
+              />
+            </div>
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="mail" class="contact__label-text"
+                  > メールアドレス</label
+                >
+                <span class="contact__required">必須</span>
+              </div>
+              <input
+                type="email"
+                id="mail"
+                class="contact__input"
+                placeholder="excitecode@info.com"
+                required
+              />
+            </div>
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="type" class="contact__label-text"
+                  >お問い合わせの種類</label
+                >
+                <span class="contact__required">必須</span>
+              </div>
+              <div class="contact__select-wrap">
+                <select class="contact__select" id="type" required>
+                  <option value="">選択してください</option>
+                  <option value="資料請求"></option>
+                  <option value="サービスについて">サービスについて</option>
+                  <option value="その他">その他</option>
+                </select>
+              </div>
+              
+            </div>
+            <div class="contact__item">
+              <div class="contact__label">
+                <label for="contents" class="contact__label-text"
+                  >お問い合わせ内容</label
+                >
+                <span class="contact__required">必須</span>
+              </div>
+              <textarea
+                class="contact__textarea"
+                id="contents"
+                placeholder="お問い合わせ内容を入力してください"
+                required
+              ></textarea>
+            </div>
+
+            <button class="contact__button" type="submit">送信する</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__copyright">©&copy; 2023 ExciteCode inc.</small>
+    </footer>
+  </body>
+</html>
