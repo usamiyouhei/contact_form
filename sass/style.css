@@ -140,29 +140,201 @@ select::-ms-expand {
   display: none;
 }
 
-.header {
+/* .header {
+  background-color: #eadd29;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 31px 0 0 80px;
-}
-@media screen and (max-width: 768px) {
+} */
+/* @media screen and (max-width: 768px) {
   .header {
     padding: 19px 0 0 10px;
   }
-}
+} */
 
 .header__logo {
-  width: 149px;
-  aspect-ratio: 149/26;
+  /* width: 250px; */
+  width: 30px;
+  /* aspect-ratio: 42/9; */
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .header__logo {
     width: 103px;
   }
+} */
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 74px;
+  background-color: #F7F7EE;
 }
 
+.header__inner {
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+  height: inherit;
+}
+@media screen and (max-width: 1024px) {
+  .header__inner {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__inner {
+    padding: 0 15px;
+  }
+}
+
+.header__name {
+  font-size: 26px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  height: inherit;
+  color: #2B3F2F;
+}
+@media screen and (max-width: 768px) {
+  .header__name {
+    font-size: 24px;
+  }
+}
+
+.header__nav {
+  height: inherit;
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header__item {
+  height: inherit;
+}
+
+.header__item:not(:first-child) {
+  margin-left: 66px;
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  color: #2B3F2F;
+  height: inherit;
+}
+
+.header__contact {
+  margin-left: 66px;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 9999;
+  top: 30px;
+  right: 15px;
+  width: 25px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.hamburger.is-active {
+  right: 20px;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  transition: transform 0.3s;
+  background-color: #2B3F2F;
+}
+
+.hamburger span:first-child {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+  transition: opacity 0.3s;
+}
+
+.hamburger span:last-child {
+  top: 16px;
+}
+
+.hamburger.is-active span:first-child {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active span:last-child {
+  top: 15px;
+  transform: rotate(45deg);
+}
+
+.drawer-menu {
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #F7F7EE;
+}
+
+.drawer-menu__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
+}
+
+.drawer-menu__items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.drawer-menu__item {
+  display: inline-block;
+}
+
+.drawer-menu__item:not(:first-child) {
+  margin-top: 50px;
+}
+
+.drawer-menu__link {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 1.875;
+  color: #2B3F2F;
+}
+
+.drawer-menu__contact {
+  margin-top: 48px;
+}
 .fv {
   background-image: url(../images/FV-img.jpg);
   background-size: contain;
@@ -174,6 +346,7 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .fv {
     background-image: url(../images/FVimg-sp.jpg);
+    background-size: cover;
     aspect-ratio: 375/360;
   }
 }
@@ -181,7 +354,7 @@ select::-ms-expand {
 .fv__title {
   font-size: 46px;
   font-weight: 500;
-  color: #25262B;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .fv__title {
@@ -391,13 +564,15 @@ select::-ms-expand {
 }
 
 .footer {
-  padding-bottom: 30px;
+  background-color: #F7F7EE;
+  padding: 30px;
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .footer {
     padding-bottom: 20px;
   }
-}
+} */
 
 .footer__copyright {
   font-size: 14px;
@@ -407,5 +582,120 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .footer__copyright {
     font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
+
+.inner {
+  width: 100%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.heading {
+  position: relative;
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 17px;
+  letter-spacing: 0.05em;
+  color: #2B3F2F;
+}
+
+.heading::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 34px;
+  height: 4px;
+  content: "";
+  border-radius: 2px;
+  background-color: #2B3F2F;
+}
+
+.heading.heading--center {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .heading.heading--center {
+    text-align: left;
+  }
+}
+
+.heading.heading--center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  .heading.heading--center::after {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.text {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 1.875;
+  color: #2B3F2F;
+}
+
+.text.text--large {
+  font-size: 24px;
+  line-height: 1.833;
+}
+@media screen and (max-width: 768px) {
+  .text.text--large {
+    font-size: 20px;
+  }
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  padding: 15px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #2B3F2F;
+  transition: background-color 0.3;
+}
+.contact-button:hover {
+  opacity: 1;
+  background-color: #4D6452;
+}
+
+.contact-button.contact-button--wide {
+  font-size: 20px;
+  width: 220px;
+}
+@media screen and (max-width: 768px) {
+  .contact-button.contact-button--wide {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .md-none {
+    display: none;
+  }
+}
+
+.md-show {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .md-show {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
