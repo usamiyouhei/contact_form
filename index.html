@@ -15,10 +15,10 @@
     <!-- ogp -->
     <meta property="og:title" content="レモンケーキ | お問い合わせ" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://hogehoge.com/" />
+    <meta property="og:url" content="https://contact-form-kenchan-cake.vercel.app/" />
     <meta
       property="og:image"
-      content="http://hogehoge.com/images/ogp-img.jpg"
+      content="https://contact-form-kenchan-cake.vercel.app/images/ogp-img.jpg"
     />
     <meta property="og:site_name" content="Lemon cake" />
     <meta
@@ -27,7 +27,7 @@
     />
     <meta name="twitter:card" content="summary" />
     <!-- ファビコン -->
-    <link rel="icon" href="./images/favicon 2.ico" />
+    <link rel="icon" href="./images/logo.svg" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -118,7 +118,7 @@
             下記フォームより受け付けております。<br />
             確認後、折り返しご連絡させていただきます。
           </p>
-          <form class="contact__form">
+          <form class="contact__form" action="confirm.html" method="get">
             <div class="contact__item">
               <div class="contact__label">
                 <label for="name" class="contact__label-text">お名前</label>
@@ -127,6 +127,7 @@
               <input
                 type="text"
                 id="name"
+                name="name"
                 class="contact__input"
                 placeholder="山田 太郎"
                 required
@@ -142,6 +143,7 @@
               <input
                 type="email"
                 id="mail"
+                name="email"
                 class="contact__input"
                 placeholder="〇〇@info.com"
                 required
@@ -157,6 +159,7 @@
               <input
                 type="tel"
                 id="tel"
+                name="tel"
                 class="contact__input"
                 placeholder="012-345-6789"
                 required
@@ -173,6 +176,7 @@
               <textarea
                 class="contact__textarea"
                 id="contents"
+                name="contents"
                 placeholder="住所を入力してください"
                 required
               ></textarea>
@@ -203,7 +207,7 @@
                 <span class="contact__required">必須</span>
               </div>
               <div class="contact__select-wrap">
-                <select class="contact__select" id="type" required>
+                <select class="contact__select" id="type" name="type" required>
                   <option value="">選択してください</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -225,7 +229,7 @@
                 <!-- <span class="contact__required">必須</span> -->
               </div>
               <div class="contact__select-wrap">
-                <select class="contact__select" id="type" required>
+                <select class="contact__select" id="type" name="type" >
                   <option value="">選択してください</option>
                   <option value="のし紙">のし紙</option>
                   <option value="包装紙">包装紙</option>
@@ -245,11 +249,10 @@
                 class="contact__textarea"
                 id="contents"
                 placeholder="お問い合わせ内容を入力してください"
-                required
               ></textarea>
             </div>
 
-            <button class="contact__button" type="submit">送信する</button>
+            <button class="contact__button" type="submit" >送信する</button>
           </form>
         </div>
       </div>

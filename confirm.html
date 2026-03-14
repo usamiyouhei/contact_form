@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>レモンケーキ | お問い合わせ内容確認</title>
+    <meta name="description" content="お問い合わせ内容の確認ページです" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="レモンケーキ | お問い合わせ内容確認" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://contact-form-kenchan-cake.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="http://hogehoge.com/images/ogp-img.jpg"
+    />
+    <meta property="og:site_name" content="Lemon cake" />
+    <meta
+      property="og:description"
+      content="お問い合わせ内容の確認ページです"
+    />
+    <meta name="twitter:card" content="summary" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon 2.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ファーストビューの背景画像を先に読み込む -->
+    <link rel="preload" as="image" href="./images/fv-img.jpg" />
+    <link rel="preload" as="image" href="./images/fv-img-sp.jpg" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <!-- JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header js-header">
+      <div class="header__inner">
+        <img
+          src="./images/logo.svg"
+          alt=""
+          class="header__logo"
+          loading="lazy"
+        />
+        <h1 class="header__name">kenchan cake</h1>
+        <nav class="header__nav md-none">
+          <ul class="header__items">
+            <li class="header__item">
+              <a href="#vision" class="header__link">Vision</a>
+            </li>
+            <li class="header__item">
+              <a href="#service" class="header__link">Service</a>
+            </li>
+            <li class="header__item">
+              <a href="#news" class="header__link">News</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#contact" class="header__contact contact-button md-none"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <div class="hamburger js-hamburger md-show">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="drawer-menu js-drawer">
+      <div class="drawer-menu__inner">
+        <ul class="drawer-menu__items">
+          <li class="drawer-menu__item">
+            <a href="#vision" class="drawer-menu__link">Vision</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a href="#service" class="drawer-menu__link">Service</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a href="#news" class="drawer-menu__link">News</a>
+          </li>
+        </ul>
+        <a href="#contact" class="drawer-menu__contact contact-button"
+          >Contact</a
+        >
+      </div>
+    </div>
+
+    <main>
+      <div class="fv">
+        <h1 class="fv__title">お問い合わせ内容確認</h1>
+      </div>
+      <div class="contact__inner">
+        <div>
+          <p class="confirm-text">以下の内容でよろしいでしょうか？</p>
+        </div>
+        <dl class="confirm">
+          <div class="confirm__row">
+            <dt class="confirm__label">お名前</dt>
+            <dd class="confirm__value" id="confirm-name"></dd>
+          </div>
+
+          <div class="confirm__row">
+            <dt class="confirm__label">メールアドレス</dt>
+            <dd class="confirm__value" id="confirm-mail"></dd>
+          </div>
+
+          <div class="confirm__row">
+            <dt class="confirm__label">電話番号</dt>
+            <dd class="confirm__value" id="confirm-tel"></dd>
+          </div>
+
+          <div class="confirm__row">
+            <dt class="confirm__label">住所</dt>
+            <dd class="confirm__value" id="confirm-address"></dd>
+          </div>
+
+          <div class="confirm__row">
+            <dt class="confirm__label">お問い合わせ種類</dt>
+            <dd class="confirm__value" id="confirm-type"></dd>
+          </div>
+
+          <div class="confirm__row">
+            <dt class="confirm__label">個数</dt>
+            <dd class="confirm__value" id="confirm-quantity"></dd>
+          </div>
+
+          <div class="confirm__row">
+            <dt class="confirm__label">包装</dt>
+            <dd class="confirm__value" id="confirm-wrap"></dd>
+          </div>
+
+          <div class="confirm__row">
+            <dt class="confirm__label">その他</dt>
+            <dd class="confirm__value" id="confirm-message"></dd>
+          </div>
+        </dl>
+        <button class="contact__button" type="submit">送信する</button>
+        <button class="contact__button" type="submit" onclick="history.back()">
+          戻る
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__copyright">&copy; 2026 Kenchan cake</small>
+    </footer>
+  </body>
+</html>
