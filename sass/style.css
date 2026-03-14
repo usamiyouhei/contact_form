@@ -348,7 +348,7 @@ select::-ms-expand {
     background-image: url(../images/FVimg-sp.jpg);
     background-size: cover;
     background-position: center;
-    aspect-ratio: 280/80;
+    /* aspect-ratio: 280/80; */
   }
 }
 
