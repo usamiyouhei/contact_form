@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta name="robots" content="noindex,nofollow" />
@@ -15,7 +15,10 @@
     <!-- ogp -->
     <meta property="og:title" content="レモンケーキ | お問い合わせ" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://contact-form-kenchan-cake.vercel.app/" />
+    <meta
+      property="og:url"
+      content="https://contact-form-kenchan-cake.vercel.app/"
+    />
     <meta
       property="og:image"
       content="https://contact-form-kenchan-cake.vercel.app/images/ogp-img.jpg"
@@ -56,13 +59,13 @@
 
   <body>
     <header class="header js-header">
-       <div class="header__inner">
-         <img
-        src="./images/logo.svg"
-        alt=""
-        class="header__logo"
-        loading="lazy"
-      />
+      <div class="header__inner">
+        <img
+          src="./images/logo.svg"
+          alt=""
+          class="header__logo"
+          loading="lazy"
+        />
         <h1 class="header__name">kenchan cake</h1>
         <nav class="header__nav md-none">
           <ul class="header__items">
@@ -77,7 +80,9 @@
             </li>
           </ul>
         </nav>
-        <a href="#contact" class="header__contact contact-button md-none">Contact</a>
+        <a href="#contact" class="header__contact contact-button md-none"
+          >Contact</a
+        >
       </div>
     </header>
 
@@ -100,7 +105,9 @@
             <a href="#news" class="drawer-menu__link">News</a>
           </li>
         </ul>
-        <a href="#contact" class="drawer-menu__contact contact-button">Contact</a>
+        <a href="#contact" class="drawer-menu__contact contact-button"
+          >Contact</a
+        >
       </div>
     </div>
 
@@ -135,15 +142,15 @@
             </div>
             <div class="contact__item">
               <div class="contact__label">
-                <label for="mail" class="contact__label-text"
-                  > メールアドレス</label
+                <label for="mail" class="contact__label-text">
+                  メールアドレス</label
                 >
                 <span class="contact__required">必須</span>
               </div>
               <input
                 type="email"
                 id="mail"
-                name="email"
+                name="mail"
                 class="contact__input"
                 placeholder="〇〇@info.com"
                 required
@@ -151,9 +158,7 @@
             </div>
             <div class="contact__item">
               <div class="contact__label">
-                <label for="mail" class="contact__label-text"
-                  > 電話番号</label
-                >
+                <label for="mail" class="contact__label-text"> 電話番号</label>
                 <span class="contact__required">必須</span>
               </div>
               <input
@@ -168,9 +173,7 @@
 
             <div class="contact__item">
               <div class="contact__label">
-                <label for="contents" class="contact__label-text"
-                  >住所</label
-                >
+                <label for="contents" class="contact__label-text">住所</label>
                 <span class="contact__required">必須</span>
               </div>
               <textarea
@@ -192,7 +195,9 @@
               <div class="contact__select-wrap">
                 <select class="contact__select" id="type" required>
                   <option value="">選択してください</option>
-                  <option value="レモンケーキのご注文">レモンケーキのご注文</option>
+                  <option value="レモンケーキのご注文">
+                    レモンケーキのご注文
+                  </option>
                   <option value="他のお菓子について">他のお菓子について</option>
                   <option value="その他">その他</option>
                 </select>
@@ -201,9 +206,7 @@
 
             <div class="contact__item">
               <div class="contact__label">
-                <label for="type" class="contact__label-text"
-                  >個数</label
-                >
+                <label for="type" class="contact__label-text">個数</label>
                 <span class="contact__required">必須</span>
               </div>
               <div class="contact__select-wrap">
@@ -229,7 +232,7 @@
                 <!-- <span class="contact__required">必須</span> -->
               </div>
               <div class="contact__select-wrap">
-                <select class="contact__select" id="type" name="type" >
+                <select class="contact__select" id="type" name="type">
                   <option value="">選択してください</option>
                   <option value="のし紙">のし紙</option>
                   <option value="包装紙">包装紙</option>
@@ -252,7 +255,7 @@
               ></textarea>
             </div>
 
-            <button class="contact__button" type="submit" >送信する</button>
+            <button class="contact__button" type="submit">送信する</button>
           </form>
         </div>
       </div>
