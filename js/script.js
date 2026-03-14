@@ -24,3 +24,12 @@ $(function () {
   });
 });
 });
+
+
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("confirm-name").textContent = params.get("name");
+document.getElementById("confirm-mail").textContent = params.get("mail");
+document.getElementById("confirm-tel").textContent = params.get("tel");
+document.getElementById("confirm-address").textContent = params.get("contents");
+document.getElementById("confirm-type").textContent = params.get("type");
