@@ -1,0 +1,40 @@
+<svg width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+
+<!-- background circle -->
+<circle cx="320" cy="320" r="300" fill="#FFF7E5"/>
+
+<!-- lemon cake shape -->
+<path d="
+M170 380
+C170 270 240 220 320 220
+C400 220 470 270 470 380
+Z"
+fill="#E8B36A"/>
+
+<!-- icing -->
+<path d="
+M210 310
+C240 290 270 285 320 285
+C370 285 400 290 430 310"
+stroke="#FFFFFF"
+stroke-width="14"
+stroke-linecap="round"/>
+
+<!-- lemon -->
+<ellipse cx="320" cy="160" rx="42" ry="30" fill="#FFD84D"/>
+
+<!-- leaf -->
+<ellipse cx="350" cy="135" rx="18" ry="10"
+transform="rotate(25 350 135)"
+fill="#3C8D3C"/>
+
+<!-- brand text -->
+<text x="320" y="470"
+text-anchor="middle"
+font-size="36"
+font-family="Helvetica, Arial, sans-serif"
+fill="#333">
+SETOUCHI LEMON CAKE
+</text>
+
+</svg>
