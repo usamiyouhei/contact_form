@@ -110,59 +110,37 @@
 
     <main>
       <div class="fv">
-        <h1 class="fv__title">お問い合わせ内容確認</h1>
+        <h1 class="fv__title">✔ 送信完了しました</h1>
       </div>
       <div class="contact__inner">
-        <div>
-          <p class="confirm-text">以下の内容でよろしいでしょうか？</p>
+        <div class="thanks__inner">
+          <h2 class="thanks__title">ご注文ありがとうございます</h2>
+          <p>ご注文内容を確認の上、メールにてご連絡いたします。</p>
+
+          <div class="thanks__flow">
+            <p>▼ 今後の流れ</p>
+            <ul>
+              <li>① ご注文確認メール送信</li>
+              <li>② 発送準備（1〜3日）</li>
+              <li>③ 発送完了のご連絡</li>
+            </ul>
+          </div>
+          <div class="thanks__message">
+            <p>
+              一つ一つ丁寧に焼き上げたレモンケーキを<br />
+              心を込めてお届けします。
+            </p>
+          </div>
+          <div class="thanks__actions">
+            <a href="/" class="contact__button">トップへ戻る</a>
+            <a
+              href="https://instagram.com/xxxxx"
+              class="contact__button secondary"
+            >
+              Instagramを見る
+            </a>
+          </div>
         </div>
-        <dl class="confirm">
-          <div class="confirm__row">
-            <dt class="confirm__label">お名前</dt>
-            <dd class="confirm__value" id="confirm-name"></dd>
-          </div>
-
-          <div class="confirm__row">
-            <dt class="confirm__label">メールアドレス</dt>
-            <dd class="confirm__value" id="confirm-mail"></dd>
-          </div>
-
-          <div class="confirm__row">
-            <dt class="confirm__label">電話番号</dt>
-            <dd class="confirm__value" id="confirm-tel"></dd>
-          </div>
-
-          <div class="confirm__row">
-            <dt class="confirm__label">住所</dt>
-            <dd class="confirm__value" id="confirm-address"></dd>
-          </div>
-
-          <div class="confirm__row">
-            <dt class="confirm__label">お問い合わせ種類</dt>
-            <dd class="confirm__value" id="confirm-type"></dd>
-          </div>
-
-          <div class="confirm__row">
-            <dt class="confirm__label">個数</dt>
-            <dd class="confirm__value" id="confirm-quantity"></dd>
-          </div>
-
-          <div class="confirm__row">
-            <dt class="confirm__label">包装</dt>
-            <dd class="confirm__value" id="confirm-wrap"></dd>
-          </div>
-
-          <div class="confirm__row">
-            <dt class="confirm__label">その他</dt>
-            <dd class="confirm__value" id="confirm-message"></dd>
-          </div>
-        </dl>
-        <button class="contact__button" type="submit">
-          <a href="/thanks.html">送信する</a>
-        </button>
-        <button class="contact__button" type="submit" onclick="history.back()">
-          戻る
-        </button>
       </div>
     </main>
 
