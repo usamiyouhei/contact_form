@@ -61,12 +61,12 @@
     <header class="header js-header">
       <div class="header__inner">
         <img
-          src="./images/logo.svg"
+          src="./images/lemon_logo_ultra_minimal.svg"
           alt=""
           class="header__logo"
           loading="lazy"
         />
-        <h1 class="header__name">kenchan cake</h1>
+        <h1 class="header__name">Re:Lemon cake</h1>
         <nav class="header__nav md-none">
           <ul class="header__items">
             <li class="header__item">
@@ -193,7 +193,12 @@
                 <span class="contact__required">必須</span>
               </div>
               <div class="contact__select-wrap">
-                <select class="contact__select" id="type" required>
+                <select
+                  class="contact__select"
+                  id="type"
+                  name="inquiryType"
+                  required
+                >
                   <option value="">選択してください</option>
                   <option value="レモンケーキのご注文">
                     レモンケーキのご注文
@@ -210,7 +215,12 @@
                 <span class="contact__required">必須</span>
               </div>
               <div class="contact__select-wrap">
-                <select class="contact__select" id="type" name="type" required>
+                <select
+                  class="contact__select"
+                  id="quantity"
+                  name="quantity"
+                  required
+                >
                   <option value="">選択してください</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -232,7 +242,7 @@
                 <!-- <span class="contact__required">必須</span> -->
               </div>
               <div class="contact__select-wrap">
-                <select class="contact__select" id="type" name="type">
+                <select class="contact__select" id="wrap" name="wrap">
                   <option value="">選択してください</option>
                   <option value="のし紙">のし紙</option>
                   <option value="包装紙">包装紙</option>
@@ -250,19 +260,20 @@
               </div>
               <textarea
                 class="contact__textarea"
-                id="contents"
+                id="message"
+                name="message"
                 placeholder="お問い合わせ内容を入力してください"
               ></textarea>
             </div>
 
-            <button class="contact__button" type="submit">送信する</button>
+            <button class="contact__button" type="submit">確認する</button>
           </form>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <small class="footer__copyright">&copy; 2026 Kenchan cake</small>
+      <small class="footer__copyright">&copy; 2026 Héritage</small>
     </footer>
   </body>
 </html>
