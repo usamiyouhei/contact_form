@@ -336,7 +336,7 @@ select::-ms-expand {
   margin-top: 48px;
 }
 .fv {
-  background-image: url(../images/FV-img.jpg);
+  background-image: url(../images/Lemon-cake.jpeg);
   background-size: cover;
   aspect-ratio: 1440/460;
   display: flex;
@@ -345,7 +345,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .fv {
-    background-image: url(../images/FVimg-sp.jpg);
+    background-image: url(../images/Lemon-cake.jpeg);
     background-size: cover;
     background-position: center;
     /* aspect-ratio: 280/80; */
@@ -355,7 +355,7 @@ select::-ms-expand {
 .fv__title {
   font-size: 46px;
   font-weight: 500;
-  color: #fff;
+  color: #222;
 }
 @media screen and (max-width: 768px) {
   .fv__title {
