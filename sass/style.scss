@@ -21,14 +21,14 @@
   }
 }
 .fv {
-  background-image: url(../images/FV-img.jpg);
+  background-image: url(../images/Lemon-cake.jpeg);
   background-size: contain;
   aspect-ratio: 1440 / 460;
   display: flex;
   justify-content: center;
   align-items: center;
   @include mq("md") {
-    background-image: url(../images/FVimg-sp.jpg);
+    background-image: url(../images/Lemon-cake.jpeg);
     aspect-ratio: 375 / 360;
   }
 }
@@ -184,24 +184,23 @@
   }
 }
 .contact__button {
-font-size: 16px;
-font-weight: $bold;
-border-radius: 6px;
-background-color:$turquoise-blue ;
-color: $white;
-padding: 15.5px 12px;
-margin-top: 40px;
-width: 100%;
-transition: background-color 0.3s;
-@include mq("md"){
-  font-size: 14px;
-  margin-top: 24px;
-  padding: 13px 12px;
-}
-&:hover {
-background-color:$sky-blue ;
-
-}
+  font-size: 16px;
+  font-weight: $bold;
+  border-radius: 6px;
+  background-color: $turquoise-blue;
+  color: $white;
+  padding: 15.5px 12px;
+  margin-top: 40px;
+  width: 100%;
+  transition: background-color 0.3s;
+  @include mq("md") {
+    font-size: 14px;
+    margin-top: 24px;
+    padding: 13px 12px;
+  }
+  &:hover {
+    background-color: $sky-blue;
+  }
 }
 
 // Footer
